@@ -1,123 +1,4 @@
-<!-- SOBRE MIM -->
-<!-- sobremim.html -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Sobre Mim - Ruth Mayara</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <a href="sobremim.html" class="active">Sobre mim</a>
-    <a href="formacao.html">Formação</a>
-    <a href="portfolio.html">Portfólio</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <section class="sobre">
-    <img src="imagens/minha-foto.jpg" alt="Foto de Ruth Mayara">
-    <h2>Olá, sou Ruth Mayara!</h2>
-    <p>Sou estudante de programação web, apaixonada por tecnologia e criação de interfaces.</p>
-    <p>Meus hobbies incluem leitura, música e aprender coisas novas.</p>
-  </section>
-</body>
-</html>
-
-<!-- FORMAÇÃO -->
-<!-- formacao.html -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Formação - Ruth Mayara</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <a href="sobremim.html">Sobre mim</a>
-    <a href="formacao.html" class="active">Formação</a>
-    <a href="portfolio.html">Portfólio</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <section class="formacao">
-    <h2>Formação Acadêmica</h2>
-    <p>Curso de Análise e Desenvolvimento de Sistemas - Em andamento</p>
-    <p>Idiomas: Português (nativo), Inglês (intermediário)</p>
-  </section>
-</body>
-</html>
-
-<!-- PORTFÓLIO -->
-<!-- portfolio.html -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfólio - Ruth Mayara</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <a href="sobremim.html">Sobre mim</a>
-    <a href="formacao.html">Formação</a>
-    <a href="portfolio.html" class="active">Portfólio</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
-  <section class="projeto">
-  <h2>Projeto: Página de Célula</h2>
-  <a href="https://www.instagram.com/luzdomundo_teens/" target="_blank">
-    <img src="imagens/pagina-celula.png" alt="Página de Célula">
-  </a>
-  <p>Esse projeto é uma página de divulgação de uma célula cristã com visual jovem e moderno, desenvolvida com HTML e CSS puros. Você pode acompanhar mais conteúdos no nosso Instagram.</p>
-  <p>
-    <a href="https://www.instagram.com/luzdomundo_teens/" target="_blank">
-      <img src="imagens/instagram-icon.png" alt="Instagram" style="width: 32px; height: 32px; vertical-align: middle;"> @luzdomundo_teens
-    </a>
-  </p>
-</section>
-</body>
-</html>
-
-<!-- CONTATO -->
-<!-- contato.html -->
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Contato - Ruth Mayara</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <a href="sobremim.html">Sobre mim</a>
-    <a href="formacao.html">Formação</a>
-    <a href="portfolio.html">Portfólio</a>
-    <a href="contato.html" class="active">Contato</a>
-  </nav>
-
-  <section class="contato">
-    <h2>Fale Comigo</h2>
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome"><br>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br>
-
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem"></textarea><br>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-</body>
-</html>
-
-<!-- CSS -->
-<!-- style.css -->
+/* Geral */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -150,36 +31,44 @@ section {
   text-align: center;
 }
 
-img {
+/* Estilo para cada item do projeto */
+.projeto-item {
+  margin-bottom: 40px;
+}
+
+.projeto-item h3 {
+  font-size: 24px;
+  color: #005f73;
+}
+
+.projeto-imagem {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
+.projeto-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
   background-color: #005f73;
   color: white;
-  padding: 10px;
-  border: none;
+  text-decoration: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-button:hover {
+.projeto-link:hover {
   background-color: #0a9396;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+  .projeto-item {
+    padding: 10px;
+  }
+
+  .projeto-item h3 {
+    font-size: 20px;
+  }
 }
