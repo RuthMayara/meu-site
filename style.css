@@ -1,144 +1,42 @@
-/* Comentário: estilo geral da página */
 body {
   font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: white;
   margin: 0;
   padding: 0;
-  background-color: #0f172a; /* fundo escuro moderno */
-  color: #f1f5f9; /* texto claro para contraste */
 }
 
-/* Cabeçalho */
-header {
-  background-color: #1e293b; /* cabeçalho azul escuro */
-  color: white;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
+header, footer {
+  background-color: #1e293b;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Menu */
 nav ul {
   list-style: none;
-  padding: 0;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
-  color: #f1f5f9;
+  color: #3b82f6;
   text-decoration: none;
-}
-
-nav a:hover {
-  color: #38bdf8; /* efeito azul neon */
-}
-
-/* Conteúdo principal */
-main {
-  padding: 2rem;
-}
-
-/* Rodapé */
-footer {
-  background-color: #1e293b; /* rodapé escuro */
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-/* Estilo do formulário */
-form {
-  max-width: 500px;
-  margin: auto;
-}
-
-input, textarea, button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 4px;
-  border: 1px solid #334155;
-  border-radius: 5px;
-  font-size: 1rem;
-  background-color: #1e293b;
-  color: #f1f5f9;
-}
-
-button {
-  background-color: #38bdf8;
-  color: #0f172a;
-  border: none;
-  cursor: pointer;
   font-weight: bold;
-}
-
-button:hover {
-  background-color: #0284c7;
-}
-.projetos-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.projeto-item {
-  background-color: #1e293b; /* mesmo tom do cabeçalho */
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.projeto-link {
-  color: #38bdf8;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.projeto-link:hover {
-  color: #0ea5e9;
-}
-/* Seção de projetos */
-.projetos {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
 }
 
 .projetos-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 25px;
+  margin: 20px;
 }
 
 .projeto-item {
   background-color: #1e293b;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  text-align: left;
+  padding: 15px;
+  border-radius: 8px;
 }
 
-.projeto-item h3 {
-  color: #38bdf8;
-  margin-bottom: 1rem;
-}
-
-.projeto-link {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.projeto-link:hover {
-  color: #0ea5e9;
-}
-
-/* Lista dentro de projeto */
-.projeto-item ul {
-  padding-left: 1.2rem;
-  margin-top: 0.5rem;
-}
