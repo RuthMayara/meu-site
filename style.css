@@ -97,3 +97,48 @@ button:hover {
 .projeto-link:hover {
   color: #0ea5e9;
 }
+/* Seção de projetos */
+.projetos {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projeto-item {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.projeto-item h3 {
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.projeto-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projeto-link:hover {
+  color: #0ea5e9;
+}
+
+/* Lista dentro de projeto */
+.projeto-item ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
