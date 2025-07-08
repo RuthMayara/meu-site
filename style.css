@@ -74,3 +74,26 @@ button {
 button:hover {
   background-color: #0284c7;
 }
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.projeto-item {
+  background-color: #1e293b; /* mesmo tom do cabeçalho */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.projeto-link {
+  color: #38bdf8;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.projeto-link:hover {
+  color: #0ea5e9;
+}
