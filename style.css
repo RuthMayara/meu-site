@@ -3,13 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #0f172a; /* fundo escuro moderno */
+  color: #f1f5f9; /* texto claro para contraste */
 }
 
 /* Cabeçalho */
 header {
-  background-color: #444;
+  background-color: #1e293b; /* cabeçalho azul escuro */
   color: white;
   padding: 1rem;
   position: sticky;
@@ -25,12 +25,12 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #f1f5f9;
   text-decoration: none;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #38bdf8; /* efeito azul neon */
 }
 
 /* Conteúdo principal */
@@ -40,11 +40,12 @@ main {
 
 /* Rodapé */
 footer {
-  background-color: #eee;
+  background-color: #1e293b; /* rodapé escuro */
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
+
 /* Estilo do formulário */
 form {
   max-width: 500px;
@@ -55,19 +56,21 @@ input, textarea, button {
   width: 100%;
   padding: 10px;
   margin-top: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #334155;
   border-radius: 5px;
   font-size: 1rem;
+  background-color: #1e293b;
+  color: #f1f5f9;
 }
 
 button {
-  background-color: #444;
-  color: white;
+  background-color: #38bdf8;
+  color: #0f172a;
   border: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #333;
+  background-color: #0284c7;
 }
-
